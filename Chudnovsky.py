@@ -18,8 +18,11 @@ def pi(hassasiyet: int) -> str:
         multinominal_terim = factorial(6 * k) // (factorial(3 * k) * factorial(k) **3)
         lineer_terim += 545140134
         ustel_terim *= -262537412640768000
-        parcali_toplam += Decimal(multinominal_terim * lineer_terim) / ustel_terim
+        formul(ustel_terim, lineer_terim, parcali_toplam, multinominal_terim)
     return str(kalan / parcali_toplam)[:-1]
+
+def formul(ustel_terim, lineer_terim, parcali_toplam, multinominal_terim):
+    parcali_toplam += Decimal(multinominal_terim * lineer_terim) / ustel_terim
 
 if __name__ == "__main__":
     n=50 ## Kaç basamak hesaplamak istediğinizi yazın - Write here how many digit you want to calculate.
