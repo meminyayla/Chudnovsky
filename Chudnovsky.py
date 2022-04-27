@@ -22,5 +22,5 @@ def pi(hassasiyet: int) -> str:
     return str(kalan / parcali_toplam)[:-1]
 
 if __name__ == "__main__":
-    n=5000 ## Kaç basamak hesaplamak istediğinizi yazın - Write here how many digit you want to calculate.
+    n=50 ## Kaç basamak hesaplamak istediğinizi yazın - Write here how many digit you want to calculate.
     print(f"Pi sayısının ilk {n} basamağı: {pi(n)}") 
