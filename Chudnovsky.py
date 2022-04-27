@@ -1,3 +1,4 @@
+#todo: açıklamalar eklenecek
 from decimal import Decimal, getcontext
 from math import ceil, factorial
 
