@@ -9,7 +9,7 @@ def pi(hassasiyet: int) -> str:
 
     getcontext().prec = hassasiyet
     interasyon_say = ceil(hassasiyet/14)
-    kalan = 426880 * Decimal(10005).sgrt()
+    kalan = 426880 * Decimal(10005).sqrt()
     ustel_terim = 1
     lineer_terim = 13591409
     parcali_toplam = Decimal(lineer_terim)
